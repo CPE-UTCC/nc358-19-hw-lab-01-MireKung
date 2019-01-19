@@ -1,0 +1,8 @@
+1.Shell ใน Linux มีอะไรบ้าง จงอธิบายมาอย่างน้อย 3 ชนิด
+
+1.1 เริ่มที่ Shell ที่เราใช้กันในห้องเรียน หรือ Bash Unix Shell
+โดยเริ่มพัฒนามาจากผู้พัฒนาชื่อ Brian Fox ในโปรเจคที่มีชื่อว่า GNU Project หรือโปรเจคที่เป็นการรวมตัวกันของนักพัฒนาสาย free-software นั่นเอง
+และแน่นอนตัว Bash เองก็เป็น free software ที่ซึ่งมาแทนที่ Bourne shell
+และได้ถูกใช้เป็น default shell ของหลาย distributions ใน Linux และ MACOS รวมไปถึงล่าสุด availableแล้วบน Windows10
+
+Bash นั้นใช้การรันบน text windowหรือเรียกอีกย่างว่า terminal โดยการให้Userพิม command ลงบนไฟล์เพื่อเรียกใช้ shell script
