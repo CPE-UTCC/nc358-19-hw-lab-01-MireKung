@@ -24,8 +24,6 @@ Bash นั้นใช้การรันบน text windowหรือเร
 ซึ่ง คล้ายคลึงกับ Unix shell อื่นๆ Bash นั้น support ชื่อไฟล์จำพวก globbing หรือเรียกอีกอย่างว่า wildcard matchingที่ทำให้การจัดการไฟล์ง่ายขึ้นไปอีก
 และยังมีความคล้ายคลึงกับตัว Bourne shell ทำให้ผู้ใช้เก่าที่เคยใช้ Bourne shell มาใช้ได้อย่างไม่ต้องเรียนรู้อะไรเพิ่มเติมมากนัก
 
-
-
 Features หลักๆบน Bash ก็คือ
 command line completion คือพูดง่ายๆก็คือการเขียนcommand บน command line นั่นแหละ โดยจะเติมชื่อไฟล์ / คอมมานด์ที่ต้องใช้ให้สมบูรณ์
 basic debugging
@@ -33,6 +31,16 @@ exception handling
 หลักๆคือสามารถทำงานทุกคำสั่งที่ตัว Bourne shell ทำได้นั่นเอง
 User ยังสามารถกด tab key ใน command-shell เพื่อให้ Bash ทำงานตัว command line completion ได้อีกด้วย
 ซึ่งทำให้ง่ายมากๆสำหรับการพิมชื่อไฟล์ ชื่อโปรแกรม ชื่อตัวแปร หรือ command ต่างๆ
+
+1.3 Almquist shell (A shell, ash)
+เป็นอีกหนึ่งตัวโคลนของ Bourne shell โดยออกมาในช่วงปลาย 1980's โดยถูกกล่าวอ้างในชื่อของ 
+" การนำกลับมาใช้ใหม่ของ System V shell โดยเพิ่มอะไรใหม่ๆเข้าไป " 
+โดยมีความโดดเด่นในด้านการนำมาใช้บนเครื่องจักรหรืออุปกรณ์ที่มี memory ต่ำ
+แต่ไม่มีดีเทียบเท่า bash หรือunix shell ตัวอื่น ซึ่งตัว ashเองก็มีหน้าตาและการรัน shell script ได้แบบเดียวกับ Bourne shell เลย
+แต่ไม่มี feature บางอย่างยกตัวอย่างเช่น line editing หรือ command history (การเรียกcommand เก่า)
+โดยตัว ashนี่จะถูกใช้ใน Linux distributions บางตัว และบน Androidรุ่นต่ำกว่า 4.0 ก่อนจะถูกเปลี่ยนไปใช้ mkshแทน
+
+ภายหลังปี 1997 ash ได้ถูก port มายัง Debian Linux และได้ถูกเปลี่ยนชื่อเป็น dash (Debian Almquist shell)
 
 2.การเปลี่ยนกลับมายัง Home Directory ทำได้อย่างไร จงแสดงคำสั่งที่ใช้พร้อมคำอธิบาย
 
