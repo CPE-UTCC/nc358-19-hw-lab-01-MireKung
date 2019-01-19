@@ -1,6 +1,20 @@
 1.Shell ใน Linux มีอะไรบ้าง จงอธิบายมาอย่างน้อย 3 ชนิด
 
-1.1 เริ่มที่ Shell ที่เราใช้กันในห้องเรียน หรือ Bash Unix Shell
+1.1 Bourne shell (sh)
+เป็นหนึ่งใน shell ยุคแรกสุดโดยเป็น default shell ให้กับ version 7 Unix
+โดยเป็น shellที่นำมาแทนที่ Thompson shell(<อยู่ยุค1971) ซึ่งถูกปล่อยออกมาให้ใช้ในช่วงปี 1979 ใน Version 7 Unix distributed
+โดยเป็น interactive command โดยมีการใช้ภาษา script เพื่อให้ใช้งานได้สะดวกต่อการเขียนโปรแกรม
+
+Feature หลักๆที่มีคือ
+สามารถใช้ shell script เป็น filters ได้
+สามารถเขียนโปรแกรมรวมไปถึง controlflow และ การสร้างตัวแปรได้
+ไม่จำกัดขนาดของ string หรือ string lengths ในการเขียน shell script
+มี Buildin command ที่ใช้ในตัว OS 
+ไม่จำเป้นต้องพิมชื่อของตัวแปร / คำสั่ง ให้ครบทุกตัวอักษรเพื่อจะทำการเรียกใช้งาน
+และอื่นๆอีกมากมายตามที่ wikipedia บอกแต่อ่านแล้วไม่เข้าใจว่ามันพูดเรื่องอะไร
+
+
+1.2 Shell ที่เราใช้กันในห้องเรียน หรือ Bash Unix Shell
 โดยเริ่มพัฒนามาจากผู้พัฒนาชื่อ Brian Fox ในโปรเจคที่มีชื่อว่า GNU Project หรือโปรเจคที่เป็นการรวมตัวกันของนักพัฒนาสาย free-software นั่นเอง
 และแน่นอนตัว Bash เองก็เป็น free software ที่ซึ่งมาแทนที่ Bourne shell
 และได้ถูกใช้เป็น default shell ของหลาย distributions ใน Linux และ MACOS รวมไปถึงล่าสุด availableแล้วบน Windows10
@@ -10,6 +24,8 @@ Bash นั้นใช้การรันบน text windowหรือเร
 ซึ่ง คล้ายคลึงกับ Unix shell อื่นๆ Bash นั้น support ชื่อไฟล์จำพวก globbing หรือเรียกอีกอย่างว่า wildcard matchingที่ทำให้การจัดการไฟล์ง่ายขึ้นไปอีก
 และยังมีความคล้ายคลึงกับตัว Bourne shell ทำให้ผู้ใช้เก่าที่เคยใช้ Bourne shell มาใช้ได้อย่างไม่ต้องเรียนรู้อะไรเพิ่มเติมมากนัก
 
+
+
 Features หลักๆบน Bash ก็คือ
 command line completion คือพูดง่ายๆก็คือการเขียนcommand บน command line นั่นแหละ โดยจะเติมชื่อไฟล์ / คอมมานด์ที่ต้องใช้ให้สมบูรณ์
 basic debugging
@@ -17,8 +33,6 @@ exception handling
 หลักๆคือสามารถทำงานทุกคำสั่งที่ตัว Bourne shell ทำได้นั่นเอง
 User ยังสามารถกด tab key ใน command-shell เพื่อให้ Bash ทำงานตัว command line completion ได้อีกด้วย
 ซึ่งทำให้ง่ายมากๆสำหรับการพิมชื่อไฟล์ ชื่อโปรแกรม ชื่อตัวแปร หรือ command ต่างๆ
-
-1.2
 
 2.การเปลี่ยนกลับมายัง Home Directory ทำได้อย่างไร จงแสดงคำสั่งที่ใช้พร้อมคำอธิบาย
 
